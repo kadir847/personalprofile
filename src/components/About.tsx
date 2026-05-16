@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/index';
 import { personalInfo } from '../data/index';
-import { MapPin, Mail, Code2, Zap, Users, Award } from 'lucide-react';
+import { MapPin, Mail, Code2, Zap, Lightbulb, BookOpen } from 'lucide-react';
 
 const stats = [
-  { label: 'Years Experience', value: '6+', icon: Code2 },
-  { label: 'Projects Shipped', value: '50+', icon: Zap },
-  { label: 'Teams Led', value: '8', icon: Users },
-  { label: 'Open Source Stars', value: '12k+', icon: Award },
+  { label: 'Months Experience', value: '6', icon: Code2 },
+  { label: 'Projects Built', value: '8+', icon: Lightbulb },
+  { label: 'Languages Learned', value: '3', icon: BookOpen },
 ];
 
 export default function About() {
@@ -38,8 +37,8 @@ export default function About() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
-              Engineer, builder,{' '}
-              <span className="italic text-gradient-accent">craftsman</span>.
+              Aspiring developer,{' '}
+              <span className="italic text-gradient-accent">forever learning</span>.
             </motion.h2>
 
             <motion.div
@@ -49,11 +48,11 @@ export default function About() {
               transition={{ duration: 0.7, delay: 0.2 }}
             >
               <p className="text-lg">{personalInfo.bio}</p>
-              <p>{personalInfo.bioDetail}</p>
               <p>
-                Outside of code, I'm an avid coffee enthusiast, amateur photographer, and occasional
-                contributor to the Rust ecosystem. I believe in building in public and sharing knowledge
-                through writing and open source.
+                I'm passionate about creating clean, responsive websites and continuously improving my skills. Every project is an opportunity to learn something new and build better solutions.
+              </p>
+              <p>
+                Outside of code, I'm a gaming enthusiast who loves playing Bloodstrike and other strategy games. When I'm not coding or gaming, you'll find me exploring new web technologies and working on personal projects that challenge me to grow as a developer.
               </p>
             </motion.div>
 
@@ -84,8 +83,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="glass rounded-3xl overflow-hidden aspect-[4/3] relative group">
-                <img
-                  src="public/abdi.png"
+                <img src="public/abdi.png"
                   alt="Abdi's profile picture"
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
                 />
@@ -103,7 +101,7 @@ export default function About() {
             </motion.div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               {stats.map((stat, i) => (
                 <motion.div
                   key={stat.label}

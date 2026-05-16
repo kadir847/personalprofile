@@ -7,14 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        obsidian: "#0f0f0f",
-        pearl: "#e8e8e8",
-        accent: "#00d9ff",
-        snow: "#ffffff",
-        chrome: "#1a1a1a",
-        mist: "#333333",
-        silver: "#b0b0b0",
-        glow: "#00ffff",
+        obsidian: "#0c1220",
+        pearl: "#e7ecff",
+        accent: "#5ce0ff",
+        snow: "#f8fbff",
+        chrome: "#1f293a",
+        mist: "#c7d3e8",
+        silver: "#9fb8d4",
+        glow: "#7af1ff",
       },
       fontFamily: {
         sans: ["system-ui", "sans-serif"],

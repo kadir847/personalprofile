@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/index';
-import { Send, Mail, X,  ArrowUpRight } from 'lucide-react';
+import { Send, Mail, Github, ArrowUpRight } from 'lucide-react';
 
 const socials = [
-  { icon: Mail, label: 'Email', value: 'alex@alexchen.dev', href: 'mailto:alex@alexchen.dev' },
-  
-  { icon: X, label: 'X', value: '@alexchendev', href: 'https://x.com' },
+  { icon: Mail, label: 'Email', value: 'abdikadir.mo@SIRSchool.org', href: 'mailto:abdikadir.mo@SIRSchool.org' },
+  { icon: Github, label: 'GitHub', value: 'kadir847', href: 'https://github.com/kadir847' },
 ];
 
 export default function Contact() {
@@ -50,7 +49,7 @@ export default function Contact() {
               <span className="italic text-gradient-accent">remarkable</span>
             </h2>
             <p className="text-mist leading-relaxed mb-10 max-w-md">
-              Whether you're looking for a senior engineer, a technical co-founder, or want to 
+              Whether you're looking for a junior engineer, a technical co-founder, or want to 
               collaborate on open source — I'd love to hear from you.
             </p>
 

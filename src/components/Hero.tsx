@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Twitter, Linkedin, Sparkles } from 'lucide-react';
+import { ArrowDown, Github, Sparkles } from 'lucide-react';
 import { personalInfo } from '../data';
 
 const container = {
@@ -18,8 +18,6 @@ const item = {
 
 const socialLinks = [
   { icon: Github, href: personalInfo.github, label: 'GitHub' },
-  { icon: Twitter, href: personalInfo.twitter, label: 'Twitter' },
-  { icon: Linkedin, href: personalInfo.linkedin, label: 'LinkedIn' },
 ];
 
 export default function Hero() {
@@ -148,7 +146,7 @@ export default function Hero() {
             variants={item}
             className="text-mist text-lg md:text-xl max-w-2xl leading-relaxed mb-10 font-light"
           >
-            Senior engineer specializing in{' '}
+            Junior engineer specializing in{' '}
             <span className="text-silver font-medium">high-performance systems</span>,{' '}
             <span className="text-silver font-medium">developer tooling</span>, and{' '}
             <span className="text-silver font-medium">product-grade interfaces</span>.

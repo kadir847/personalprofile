@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/index';
-import { experience } from '../data/index';
-import { Briefcase, Circle } from 'lucide-react';
+import { BookOpen, Circle } from 'lucide-react';
 
 export default function Experience() {
   const { ref, inView } = useInView();
@@ -28,83 +27,58 @@ export default function Experience() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight sticky top-32">
-              Where I've{' '}
-              <span className="italic text-gradient-accent block">worked</span>
+              My robotics{' '}
+              <span className="italic text-gradient-accent block">story</span>
             </h2>
             <p className="text-mist mt-4 leading-relaxed text-sm sticky top-56">
-              6+ years across product companies, building at every layer of the stack.
+              6 months of practical robotics experience through design, prototyping, and competition.
             </p>
           </motion.div>
 
-          {/* Timeline */}
           <div className="relative">
-            {/* Vertical line */}
-            <motion.div
-              className="absolute left-[22px] top-2 bottom-8 w-px bg-gradient-to-b from-accent/50 via-accent/20 to-transparent"
-              initial={{ scaleY: 0, transformOrigin: 'top' }}
-              animate={inView ? { scaleY: 1 } : {}}
-              transition={{ duration: 1.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            />
-
-            <div className="space-y-10">
-              {experience.map((job, i) => (
-                <motion.div
-                  key={job.company}
-                  className="relative pl-14"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, delay: 0.2 + i * 0.12 }}
-                >
-                  {/* Timeline dot */}
-                  <div className={`absolute left-0 top-1 w-11 h-11 rounded-full flex items-center justify-center ${
-                    i === 0 ? 'bg-accent/20 border border-accent/40' : 'glass border border-white/10'
-                  }`}>
-                    <Briefcase size={14} className={i === 0 ? 'text-accent' : 'text-mist'} />
-                    {i === 0 && (
-                      <div className="absolute inset-0 rounded-full bg-accent/10 animate-ping" />
-                    )}
+            <div className="glass rounded-2xl p-6 hover:border-white/10 transition-all duration-500 group">
+              <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-11 h-11 rounded-full bg-accent/20 flex items-center justify-center">
+                    <BookOpen size={18} className="text-accent" />
                   </div>
-
-                  {/* Card */}
-                  <div className="glass rounded-2xl p-6 hover:border-white/10 transition-all duration-500 group">
-                    <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
-                      <div>
-                        <h3 className="font-display text-xl font-semibold text-snow group-hover:text-gradient-accent transition-all duration-300">
-                          {job.role}
-                        </h3>
-                        <p className="text-accent font-medium mt-0.5">{job.company}</p>
-                      </div>
-                      <div className="text-right">
-                        <span className="text-xs font-mono text-mist glass px-3 py-1.5 rounded-lg">{job.period}</span>
-                        {job.type === 'freelance' && (
-                          <span className="block text-xs text-mist/50 mt-1">Freelance</span>
-                        )}
-                      </div>
-                    </div>
-
-                    <p className="text-sm text-mist leading-relaxed mb-4">{job.description}</p>
-
-                    {/* Achievements */}
-                    <ul className="space-y-2 mb-5">
-                      {job.achievements.map((a, j) => (
-                        <li key={j} className="flex items-start gap-2.5 text-xs text-mist/80">
-                          <Circle size={4} className="text-accent mt-1.5 flex-shrink-0 fill-current" />
-                          {a}
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Tech */}
-                    <div className="flex flex-wrap gap-1.5 pt-4 border-t border-white/[0.04]">
-                      {job.tech.map(t => (
-                        <span key={t} className="text-xs px-2.5 py-1 bg-white/5 text-mist/70 rounded-lg font-mono">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
+                  <div>
+                    <h3 className="font-display text-xl font-semibold text-snow group-hover:text-gradient-accent transition-all duration-300">
+                      Robotics Student
+                    </h3>
+                    <p className="text-xs font-mono text-mist glass px-3 py-1.5 rounded-lg">2025 — Present</p>
                   </div>
-                </motion.div>
-              ))}
+                </div>
+              </div>
+
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                I design robots and autonomous systems with a focus on embedded control, sensor fusion, and mechanical prototyping.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                I study at Still I Rise International School, which is amazing and located along Huruma Road in Mathare, Nairobi. It is the first school in the world to offer the IB curriculum for free to refugees. We get Armani uniforms, two meals daily, health insurance through NHIF, and transport. About half of our students are refugees from DRC, Somalia, and South Sudan.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                Supported by patrons Sam Tall and Sam Short, I develop robotics demos that combine hardware, firmware, and AI-driven behavior.
+              </p>
+
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                For me, this school is more than just a place to study—it’s a place that changed what I believe is possible.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                We’re located along Huruma Road in Mathare, and what makes us really special is that we’re the first school in the world to offer the International Baccalaureate (IB) curriculum for free to refugees. I’m one of the students here, and I get to learn alongside others aged 10 to 18, coming from so many different backgrounds.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                About half of us are refugees—from places like the Democratic Republic of Congo, Somalia, and South Sudan—and the rest are Kenyan students from families like mine who just needed a chance. Being here, you don’t feel those differences in a negative way. Instead, you learn from each other, share stories, and grow together.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                The school supports us in ways I didn’t think were possible. We’re given uniforms designed by Armani, we get two meals every day, health insurance through NHIF, and even transport to and from school. It means we can focus on learning without worrying about things that might have held us back before.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                To me, this isn’t just a school—it’s a community. It’s where I’ve found my voice, my confidence, and my dreams for the future.
+              </p>
+              <p className="text-sm text-mist leading-relaxed mb-5">
+                As a robotics student, I take what I learn in class and turn it into machines that move, sense, and think. My story is about building a future where technology helps my community grow.
+              </p>
             </div>
           </div>
         </div>

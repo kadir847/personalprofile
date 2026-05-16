@@ -22,10 +22,10 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-accent/20 border border-accent/30 flex items-center justify-center">
                 <span className="text-accent font-display font-bold text-sm">A</span>
               </div>
-              <span className="font-display font-semibold text-snow">Alex Chen</span>
+              <span className="font-display font-semibold text-snow">abdikadir mohamed farah</span>
             </div>
             <p className="text-xs text-mist/60 max-w-xs leading-relaxed">
-              Senior Software Engineer crafting exceptional digital experiences at the intersection of design and code.
+              junior Software Engineer with a passion for building elegant solutions and learning new technologies. Always eager to take on new challenges and contribute to impactful projects.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/[0.04] flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-mist/40 font-mono">
-            © {new Date().getFullYear()} Alex Chen. Designed & built with care.
+            © {new Date().getFullYear()} abdikadir mohamed farah. Designed & built with care.
           </p>
           <div className="flex items-center gap-4">
             <span className="text-xs text-mist/30 font-mono">v2.0.0</span>

@@ -87,7 +87,7 @@ export default function Navbar() {
               {isDark ? <Sun size={15} /> : <Moon size={15} />}
             </button>
             <a
-              href="#"
+              href="https://docs.google.com/document/d/1Qiw5o862yeqVoa_JBdh9R2lSQ_WZBsO89Yo1fe6m_U0/edit?usp=sharing"
               className="hidden sm:flex items-center gap-2 btn-ghost text-sm"
               download
             >
@@ -138,7 +138,7 @@ export default function Navbar() {
                 </motion.button>
               ))}
               <div className="pt-2 border-t border-white/[0.06]">
-                <a href="#" className="flex items-center gap-2 px-4 py-3 text-sm text-silver hover:text-snow" download>
+                <a href="https://docs.google.com/document/d/1Qiw5o862yeqVoa_JBdh9R2lSQ_WZBsO89Yo1fe6m_U0/edit?usp=sharing" className="flex items-center gap-2 px-4 py-3 text-sm text-silver hover:text-snow" download>
                   <Download size={13} />
                   Download Resume
                 </a>
