@@ -5,8 +5,8 @@ import { MapPin, Mail, Code2, Zap, Lightbulb, BookOpen } from 'lucide-react';
 
 const stats = [
   { label: 'Months Experience', value: '6', icon: Code2 },
-  { label: 'Projects Built', value: '8+', icon: Lightbulb },
-  { label: 'Languages Learned', value: '3', icon: BookOpen },
+  { label: 'Projects Built', value: '7', icon: Lightbulb },
+  { label: 'Languages Learned', value: '2', icon: BookOpen },
 ];
 
 export default function About() {
@@ -83,8 +83,8 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="glass rounded-3xl overflow-hidden aspect-[4/3] relative group">
-                <img src="public/abdi.png"
-                  alt="Abdi's profile picture"
+                <img src="/abdi.png"
+                  alt="Portrait of Abdi with his name and title overlayed in a modern card layout against a dark blurred background"
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent" />

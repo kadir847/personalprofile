@@ -46,7 +46,7 @@ export default function Experience() {
                     <h3 className="font-display text-xl font-semibold text-snow group-hover:text-gradient-accent transition-all duration-300">
                       Robotics Student
                     </h3>
-                    <p className="text-xs font-mono text-mist glass px-3 py-1.5 rounded-lg">2025 — Present</p>
+                    <p className="text-xs font-mono text-mist glass px-3 py-1.5 rounded-lg">2026 — Present</p>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function Experience() {
                 I design robots and autonomous systems with a focus on embedded control, sensor fusion, and mechanical prototyping.
               </p>
               <p className="text-sm text-mist leading-relaxed mb-5">
-                I study at Still I Rise International School, which is amazing and located along Huruma Road in Mathare, Nairobi. It is the first school in the world to offer the IB curriculum for free to refugees. We get Armani uniforms, two meals daily, health insurance through NHIF, and transport. About half of our students are refugees from DRC, Somalia, and South Sudan.
+                I study at Still I Rise International School, which is amazing and located along Huruma Road in Mathare, Nairobi. It is the first school in the world to offer the IB curriculum for free to refugees. We get free uniforms, two meals daily, health insurance through NHIF, and transport. About half of our students are refugees from DRC, Somalia, and South Sudan.
               </p>
               <p className="text-sm text-mist leading-relaxed mb-5">
                 Supported by patrons Sam Tall and Sam Short, I develop robotics demos that combine hardware, firmware, and AI-driven behavior.
@@ -68,7 +68,7 @@ export default function Experience() {
                 We’re located along Huruma Road in Mathare, and what makes us really special is that we’re the first school in the world to offer the International Baccalaureate (IB) curriculum for free to refugees. I’m one of the students here, and I get to learn alongside others aged 10 to 18, coming from so many different backgrounds.
               </p>
               <p className="text-sm text-mist leading-relaxed mb-5">
-                About half of us are refugees—from places like the Democratic Republic of Congo, Somalia, and South Sudan—and the rest are Kenyan students from families like mine who just needed a chance. Being here, you don’t feel those differences in a negative way. Instead, you learn from each other, share stories, and grow together.
+                About half of us are refugees—from places like the Democratic Republic of Congo, Somalia, and South Sudan—and the rest are Kenyan students from vulnerable families who just needed a chance. Being here, you don’t feel those differences in a negative way. Instead, you learn from each other, share stories, and grow together.
               </p>
               <p className="text-sm text-mist leading-relaxed mb-5">
                 The school supports us in ways I didn’t think were possible. We’re given uniforms designed by Armani, we get two meals every day, health insurance through NHIF, and even transport to and from school. It means we can focus on learning without worrying about things that might have held us back before.
