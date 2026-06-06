@@ -150,10 +150,8 @@ export default function Hero() {
             <span className="text-silver font-medium">high-performance systems</span>,{' '}
             <span className="text-silver font-medium">developer tooling</span>, and{' '}
             <span className="text-silver font-medium">product-grade interfaces</span>.
-            Previously at{' '}
-            <span className="text-accent font-medium">Stripe</span>,{' '}
-            <span className="text-accent font-medium">Linear</span> &{' '}
-            <span className="text-accent font-medium">Vercel</span>.
+            Currently at {' '}
+            <span className="text-accent font-medium">Still I Rise</span>,{' '}
           </motion.p>
 
           {/* CTAs */}
