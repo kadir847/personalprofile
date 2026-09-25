@@ -63,6 +63,19 @@ export const projects = [
     featured: true,
     stats: { features: '3+', updated: 'Mar 25' },
   },
+  {
+    id: 3,
+    title: 'Robotics Lab Dashboard',
+    description: 'A project dashboard for planning robotics experiments, tracking prototypes, and organizing technical milestones in one place.',
+    longDescription: 'A creative dashboard built to manage robotics projects, experiment notes, and progress tracking for hands-on engineering work.',
+    tags: ['Robotics', 'Productivity'],
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'UI Design'],
+    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
+    github: 'https://github.com/kadir847',
+    live: 'https://github.com/kadir847',
+    featured: true,
+    stats: { prototypes: '4', milestones: '12', updated: 'Sep 25' },
+  },
 ];
 
 export const experience = [
