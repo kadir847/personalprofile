@@ -109,7 +109,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink size={13} /> Live Demo
+                    <ExternalLink size={13} /> {project.title === 'Coding Ebook for Beginners' ? 'Read This' : 'Live Demo'}
                   </a>
                 </div>
               </motion.article>
