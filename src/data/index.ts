@@ -38,32 +38,6 @@ export const techCategories = [
 
 export const projects = [
   {
-    id: 1,
-    title: 'Personal Profile',
-    description: 'A modern, interactive personal portfolio website built with React, TypeScript, and Tailwind CSS. Showcasing projects, skills, and experience.',
-    longDescription: 'A modern and responsive portfolio website featuring smooth animations, section scrolling, and interactive project cards.',
-    tags: ['Portfolio', 'Web Design'],
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80',
-    github: 'https://github.com/kadir847/personalprofile',
-    live: 'https://github.com/kadir847/personalprofile',
-    featured: true,
-    stats: { components: '10+', pages: '6', updated: 'May 16' },
-  },
-  {
-    id: 2,
-    title: 'Study AI Assistant',
-    description: 'An intelligent study companion powered by AI. Helps students learn more effectively by summarizing notes, explaining complex topics, and generating quiz questions.',
-    longDescription: 'A smart digital tool that uses artificial intelligence to help students with summarization, topic explanation, and self-assessment.',
-    tags: ['AI/ML', 'Education'],
-    tech: ['JavaScript', 'AI/ML', 'Web API'],
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-    github: 'https://github.com/kadir847/kadirsalita123',
-    live: 'https://github.com/kadir847/kadirsalita123',
-    featured: true,
-    stats: { features: '3+', updated: 'Mar 25' },
-  },
-  {
     id: 3,
     title: 'Coding Ebook for Beginners',
     description: 'A beginner-friendly coding ebook designed to make programming concepts easier to understand through simple explanations and practical examples.',
