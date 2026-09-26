@@ -96,14 +96,6 @@ export default function Projects() {
                 {/* Links */}
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href={project.github}
-                    className="flex items-center gap-2 text-xs text-snow/80 hover:text-snow transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github size={13} /> Source
-                  </a>
-                  <a
                     href={project.live}
                     className="flex items-center gap-2 text-xs text-accent hover:text-glow transition-colors"
                     target="_blank"
