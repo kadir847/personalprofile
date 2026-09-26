@@ -39,11 +39,11 @@ export default function Projects() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
             {projects.map((project, i) => (
               <motion.article
                 key={project.id}
-                className="card group relative overflow-hidden"
+                className="card group relative overflow-hidden w-full"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
